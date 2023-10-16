@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+
+%----------------------------------------------------------------------------------------
+
+
+
+\AddToHook{shipout/foreground}{%
+  \put(.5\baselineskip,-\paperheight+.5\baselineskip)
+    {\footnotesize\texttt{document prepared with \LaTeX .}}
+}
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{ARJUN}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{S KUMAR}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{India}\\
+	\icon{Phone}{12}{+91 7306988632}\\
+	\icon{At}{12}{\href{mailto:arjunworkemail@gmail.com}{arjunworkemail@gmail}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Skype}{12}{\href{live:arjunsreekumar.1}{live:arjunsreekumar.1}}\\
+	\icon{Github}{12}{\href{https://github.com/Digambaran}{github.com/Digambaran}}\\
+	\icon{Linkedin}{12}{\href{https://linkedin.com/in/arjunskumar1995427}{arjunskumar1995427}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	Software Engineer with \textbf{4+} years of experience in developing customer facing applications \& developer tools with Javascript, Typescript \& Rust. 
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\chips{javascript}\chips{typescript}\chips{html}\chips{css}\chips{React.Js}\chips{react-redux}\chips{next.js}\chips{Node.Js}\chips{rust}\chips{python}\chips{git}
+\end{minipage}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2021 Sep -- \\ 2023 Sep\\\footnotesize{full time}}
+		{Software Engineer}
+		{at}
+		{NeoITO.}
+		{Remote}
+		{
+			Worked as a core team member for the Appblocks project, playing a \textbf{crucial role in taking the idea to an MVP}.\smallskip\\
+			\textbf{AppBlocks\texttrademark}\;-\;{\footnotesize\textcolor{darkgray}{ Low-code dev platform and marketplace.}}\\
+			\href{https://www.appblocks.com/}{\emph{Appblocks}} is an \href{https://github.com/appblocks-hub}{\emph{opensource}} low-code development platform and a marketplace for composable code blocks, \textbf{it powers applications like \href{https://www.happilee.io/}{\emph{Happilee\texttrademark}} \& \href{https://www.aasanibooks.com/}{\emph{Aasani}\texttrademark}}\\
+  			\faCaretRight\: \textbf{Designed \& Lead the development of the CLI for Appblocks}, the \href{https://github.com/appblocks-hub/BB-CLI}{\emph{BB-CLI}}, used to create, stitch and publish blocks to marketplace\\
+			\faCaretRight\: Implemented \textbf{plugin architecture using webpack's \href{https://github.com/webpack/tapable}{\emph{tapable}} library} in CLI, to enable developers to load external plugins to extend CLI's capabilities\\
+  			\faCaretRight\: Created a version control layer over git in CLI to easily manage git operations on blocks\\
+			\faCaretRight\: Developed \textbf{custom inquirerJs \& webpack plugins} to meet application workflow needs\\
+			\faCaretRight\: Created block templates to make the development process easier for users\\
+			\faCaretRight\: Developed a CI/CD workflow for applications built in blocks architecture\\
+			\texttt{Node.Js}\slashsep\texttt{tapable.Js}\slashsep\texttt{Webpack}\slashsep\texttt{Inquirer.Js}\slashsep\texttt{Commander.Js}\slashsep\texttt{GithubActions}\slashsep\texttt{React.Js}\slashsep\texttt{Typescript}\slashsep\texttt{HTML}\slashsep\texttt{CSS}\slashsep\texttt{micro-frontends}\slashsep\texttt{low-code platforms}\slashsep\texttt{composable enterprises}
+		}
+	\entry
+		{2019 Nov --\\ 2021 Mar\\\footnotesize{full time}}
+		{Software Engineer}
+		{at}
+		{Sinergia Media Labs.}
+		{India}
+		{
+			Worked mostly on two projects at SIME Labs, one was maintaining SYF (Share Your Fortune) and the second one was with \href{https://mygate.com/}{\emph{MyGate}} for a short contract period.\smallskip\\
+			\textbf{Share Your Fortune}\;-\;{\footnotesize\textcolor{darkgray}{crowdfunding website for social causes.}}\\
+  				\faCaretRight\:Migrated the application to a new React version\\
+  				\faCaretRight\:Fixed \textbf{Firebase api end points}, \textbf{integrated Stripe payment gateways} \& \textbf{SendGrid apis} and fixed UI bugs\\
+  				\faCaretRight\: Developed a \textbf{new admin dashboard}\\
+				\faCaretRight\: Built \textbf{real-time graphs} and tables to monitor user contributions and visualize various other analytics, \textbf{using d3js and Firebase}\\
+			\texttt{HTML}\slashsep\texttt{CSS}
+			\slashsep\texttt{React.Js}\slashsep\texttt{Firebase}\slashsep\texttt{D3.Js}\smallskip\\
+			\textbf{Mygate}\;-\;{\footnotesize\textcolor{darkgray}{Security and community management solutions for gated communities.}}\\
+  				\faCaretRight\: Implemented the frontend for \textbf{Election Poll and Survey features for mygate} application, where the society admin can create elections and surveys from web or mobile and the residents can vote or participate in surveys from mobile application \\
+			\faCaretRight\: Collaborated with MyGate team to improve the UI/UX of their mobile and web apps\\
+			\texttt{HTML}\slashsep\texttt{CSS}\slashsep\texttt{JQuery}
+		}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2013 -- 2017}
+		{BTech}
+		{from}
+		{Cochin University of Science \& Technology}
+		{India}
+		{Bachelor's degree in Computer Science \& Engineering.Academic projects include \emph{online judge for evaluating Computer programs} and \emph{Computer Aided Process Planning} research.}
+	
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+\cvsect{Hobbies}
+\smallskip\\
+\graychips{photography}\graychips{art}\graychips{reading}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

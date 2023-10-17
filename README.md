@@ -1,2 +1,2 @@
 # Resume
-My resume
+Built on top of https://www.latextemplates.com/template/developer-cv

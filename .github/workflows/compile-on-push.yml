@@ -17,22 +17,22 @@ jobs:
       - run: zcat < install-tl-unx.tar.gz | tar xf -
 
       - name: Remove tar
-      - run: rm install-tl-unx.tar.gx
+        run: rm install-tl-unx.tar.gx
 
       - name: Install texlive
-      - run: cd install-tl-* && perl install-tl --profile=../texlive.profile
+        run: cd install-tl-* && perl install-tl --profile=../texlive.profile
 
       - name: Update texlive manager
-      - run:  /home/resume/bin/x86_64-linux/tlmgr update --self
+        run:  /home/resume/bin/x86_64-linux/tlmgr update --self
 
       - name: Install Packages
-      - run: /home/resume/bin/x86_64-linux/tlmgr install `cat packages.txt`
+        run: /home/resume/bin/x86_64-linux/tlmgr install `cat packages.txt`
 
       - name: Compile
-      - run: /home/resume/bin/x86_64-linux/pdflatex main.tex
+        run: /home/resume/bin/x86_64-linux/pdflatex main.tex
 
       - name: Commit New PDF
-      - run: \
+        run: \
           git config --global user.email "arjunsreekumar.1@gmail.com"
           git config --global user.name "Digambaran"
           git add main.pdf

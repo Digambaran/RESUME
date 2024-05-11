@@ -11,10 +11,12 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      
       - name: Get Install Script
-      - run: wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz 
+        run: wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz 
+      
       - name: Extract tar 
-      - run: zcat < install-tl-unx.tar.gz | tar xf -
+        run: zcat < install-tl-unx.tar.gz | tar xf -
 
       - name: Remove tar
         run: rm install-tl-unx.tar.gx

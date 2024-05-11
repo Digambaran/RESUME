@@ -26,7 +26,7 @@ jobs:
         run: rm install-tl-unx.tar.gz
 
       - name: Install texlive
-        run: cd install-tl-* && perl install-tl --profile=../texlive.profile
+        run: cd install-tl-* && sudo perl install-tl --profile=../texlive.profile
 
       - name: Update texlive manager
         run:  /home/resume/bin/x86_64-linux/tlmgr update --self

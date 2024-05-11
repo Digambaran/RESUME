@@ -23,7 +23,7 @@ jobs:
         run: zcat < install-tl-unx.tar.gz | tar xf -
 
       - name: Remove tar
-        run: rm install-tl-unx.tar.gx
+        run: rm install-tl-unx.tar.gz
 
       - name: Install texlive
         run: cd install-tl-* && perl install-tl --profile=../texlive.profile

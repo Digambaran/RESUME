@@ -1,6 +1,6 @@
 name: Create-PDF
 run-name: ${{ github.actor }} is trying to compile resume
-on: [push]
+on: workflow_dispatch
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -39,4 +39,4 @@ jobs:
           git commit -m "latest compiled from github action"
           git push
 
-        
+

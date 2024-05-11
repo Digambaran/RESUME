@@ -80,7 +80,7 @@
 
 %------------------------------------------------
 
-\usepackage{fontawesome} % Required for FontAwesome icons
+\usepackage{fontawesome5} % Required for FontAwesome icons
 
 % Command to output an icon in a black square box with text to the right
 \newcommand{\icon}[3]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
@@ -208,7 +208,7 @@
 		\textbf{#2}% Entry heading text
 		{\begin{calligra}\;\huge\textbf{#3}\;\end{calligra} \textbf{\textcolor{black}{#4}}}
 		\hfill% Horizontal whitespace
-		{\faMapMarker\: \textcolor{black}{#5}}\\% Right-aligned entry qualifier text
+		{\textcolor{black}{\large\csname faMapPin\endcsname}\hspace{0.1cm} \textcolor{black}{#5}}\\% Right-aligned entry qualifier text
 		#6 % Entry description text
 	}\\\\}
 

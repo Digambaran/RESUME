@@ -36,10 +36,10 @@ jobs:
 
       - name: Commit New PDF
         run: \
-          git config --global user.email "arjunsreekumar.1@gmail.com"
-          git config --global user.name "Digambaran"
-          git add main.pdf
-          git commit -m "latest compiled from github action"
-          git push
+          git config --global user.email "arjunsreekumar.1@gmail.com" && \
+          git config --global user.name "Digambaran" && \
+          git add main.pdf && \
+          git commit -m "latest compiled from github action" && \
+          git push && \
 
 

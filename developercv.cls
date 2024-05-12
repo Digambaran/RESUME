@@ -42,7 +42,7 @@
 
 \usepackage{moresize} % Provides more font size commands (\HUGE and \ssmall)
 \usepackage{calligra}
-\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT

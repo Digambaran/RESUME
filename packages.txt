@@ -39,6 +39,9 @@ fancyhdr
 firstaid
 fix2col
 fontawesome5
+fontaxes
+fontools
+fontools.x86_64-linux
 fp
 fundus-calligra
 geometry
@@ -60,6 +63,7 @@ ifplatform
 iftex
 infwarerr
 intcalc
+kastrup
 knuth-lib
 knuth-local
 kpathsea
@@ -89,6 +93,7 @@ luaotfload
 luaotfload.x86_64-linux
 luatex
 luatex.x86_64-linux
+ly1
 makeindex
 makeindex.x86_64-linux
 metafont

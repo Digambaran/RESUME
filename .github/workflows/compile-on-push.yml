@@ -9,9 +9,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      
-      - name: Install Git
-        run: sudo apt-get install git
 
       - name: Get Install Script
         run: wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz 

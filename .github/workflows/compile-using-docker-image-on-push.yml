@@ -1,0 +1,21 @@
+name: Create Resume PDF
+run-name: ${{ github.actor }} is creating magic
+
+on:
+    workflow_dispatch:
+    push:
+
+# Jobs section
+jobs:
+    # The job that will use the container image you just pushed to ghcr.io
+    super-job:
+      runs-on: ubuntu-latest
+        container:
+          image: digambaran995/personal_resume:latest
+            credentials:
+               username: digambaran995
+               password: ${{  secrets.DOCKER_PASS }}
+        steps:
+            - name: Move Files to Container
+              run: |
+                ls

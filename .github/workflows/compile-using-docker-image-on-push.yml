@@ -8,16 +8,17 @@ on:
 # Jobs section
 jobs:
     # The job that will use the container image you just pushed to ghcr.io
-    super-job:
-     runs-on: ubuntu-latest
-        container: digambaran995/personal_resume:latest
-            credentials:
-               username: digambaran995
-               password: ${{  secrets.DOCKER_PASS }}
-        steps:
-            - name: Checkout Files
-              uses: actions/checkout@v4
+  super-job:
+    runs-on: ubuntu-latest
+    container:
+      image: digambaran995/personal_resume:latest
+      credentials:
+          username: digambaran995
+          password: ${{  secrets.DOCKER_PASS }}
+    steps:
+      - name: Checkout Files
+        uses: actions/checkout@v4
 
-            - name: Move Files to Container
-              run: |
-                ls
+      - name: Move Files to Container
+        run: |
+          ls
